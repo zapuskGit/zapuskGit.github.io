@@ -328,7 +328,7 @@
     loader.style.fontSize = '18px';
     loader.style.fontWeight = '600';
     loader.style.color = '#d62828';
-    loader.innerHTML = 'Сохранение результатов...';
+    loader.innerHTML = 'Сохранение результатов, подождите...';
     document.body.appendChild(loader);
 
     const spinner = document.createElement('div');
@@ -419,7 +419,7 @@
         .catch(() => {
           loader.style.display = 'none';
           nextBtn.disabled = false;
-          alert('Ошибка при отправке данных.');
+          alert('Ошибка при сохранении результатов.');
         });
 
         return;
@@ -443,3 +443,4 @@
   </script>
 </body>
 </html>
+
